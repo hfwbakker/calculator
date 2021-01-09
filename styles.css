@@ -1,0 +1,61 @@
+body {
+    font-family: helvetica;
+}
+
+.keyPad {
+    border-style: solid;
+    border-radius: 3%;
+    background-color: lightsteelblue;
+    padding: 10px;
+    margin: 10px;
+    width: 350px;
+    height: ;
+}
+
+.rowResetDisplay {
+    display: flex;
+}
+
+.row789Divide {
+    display: flex;
+}
+
+.row456Subtract {
+    display: flex;
+}
+
+.row123Add {
+    display: flex;
+}
+
+.operatorsAndZero {
+    display: flex;
+}
+
+.buttons {
+    font-size: 35px;
+    border-style: solid;
+    border-color: black;
+    width: 24%;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+.buttons:hover {
+    background-color: black;
+    color: white;
+}
+
+#display {
+    font-size: 35px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    margin: 5px;
+    text-align: right;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
