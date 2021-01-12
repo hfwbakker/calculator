@@ -19,9 +19,16 @@ The plan: backup current script.js and refactor a new one:
 --- Monday January 11th ---
 So that worked, more or less. runningValue now works properly so a string of calculations actually works (e.g. 10 + 5 - 3 = 12). Somehow need to figure out how to update display properly
 
+--- Tuesday January 12th ---
+Well that was a struggle. However, display updates properly now (including when a writing a string of numbers and operators is entered). Only one decimal can be in the display value at a time, and you get an error message when you try to divide by 0.
+
+Everything works now, except that limiting output to total (e.g.) 10 digits is not working yet. If I add 0.3333333(7 digits behind decimal) to 1000 i get 1000.3333333 (total 12 digits/symbols if include decimal). Input has been succesfully capped.
+
+Also, got rid of the ridiculous names and renamed script-test.js (main script file) to script.js and renamed the original script.js file to script-old.js.
+
 
 Next up:
-- Display needs to update properly 
-- bugs, probably
-- tightening up 'dat code
+- set max input and output at 12 digits
+- point 8, 9, 10
+- bugs, probably?
 - stylin' yo
