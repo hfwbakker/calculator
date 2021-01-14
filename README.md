@@ -26,9 +26,11 @@ Everything works now, except that limiting output to total (e.g.) 10 digits is n
 
 Also, got rid of the ridiculous names and renamed script-test.js (main script file) to script.js and renamed the original script.js file to script-old.js.
 
+--- Thursday January 14th ---
+Pretty much finished. Styled it a bit, number input has been limited, etc etc. All that remains is making it look a bit better, adding keyboard support, and adding a backspace button.
+
 
 Next up:
-- set max input and output at 12 digits
-- point 8, 9, 10
-- bugs, probably?
+- backspace button
+- keyboard support
 - stylin' yo

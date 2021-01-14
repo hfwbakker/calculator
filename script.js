@@ -155,7 +155,6 @@ keyReset.addEventListener("click", () => {
     displayUpdater("0")
 })
 
-
 //display screen logic
 const display = document.querySelector("#display")
 
@@ -168,6 +167,9 @@ let displayNum = document.createElement("h3")
 
 const displayUpdater = function(x) {
     console.log(`display updating with ${typeof(x)} ${x}`)
+    if (x.toString().length > 15) {
+        x = Math.round((x + Number.EPSILON) * 1000) / 1000
+    }
     displayNum.textContent = x
     display.appendChild(displayNum)
 }
@@ -181,8 +183,9 @@ const inputLengthChecker = function(x) {
 }
 
 const outputLengthChecker = function(x) {
-    if (x.toString().length > 3) {
-        x = Math.round((x + Number.EPSILON) * 1000) / 1000
+    console.log(x.toString().length)
+    if (x.toString().length > 15) {
+        x = Math.round((x + Number.EPSILON) * 1000000000) / 1000000000
         return x
     } else {
         return x

@@ -1,6 +1,6 @@
 body {
     font-family: helvetica;
-    background-color: pink;
+    background-color: lightgrey;
 }
 
 h3 {
@@ -12,9 +12,9 @@ h3 {
 .keyPad {
     border-style: solid;
     border-radius: 3%;
-    background-color: lightsteelblue;
+    background-color: grey;
     padding: 10px;
-    margin: 10px;
+    margin: 30px;
     width: 350px;
     height: ;
 }
@@ -39,10 +39,12 @@ h3 {
     display: flex;
 }
 
-.buttons {
+.numButton {
+    background-color: beige;
     font-size: 35px;
     border-style: solid;
     border-color: black;
+    border-radius: 10%;
     width: 24%;
     height: auto;
     text-align: center;
@@ -50,15 +52,35 @@ h3 {
     margin: 5px;
 }
 
-.buttons:hover {
-    background-color: black;
+.numButton:hover {
+    background-color: brown;
     color: white;
+}
+
+.operatorButton {
+    background-color: brown;
+    color: beige;
+    font-size: 35px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10%;
+    width: 24%;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+.operatorButton:hover {
+    background-color: beige;
+    color: black;
 }
 
 #display {
     font-size: 35px;
     border-style: solid;
-    border-color: black;
+    border-color: beige;
+    border-radius: 3%;
     padding: 10px;
     margin: 5px;
     text-align: right;
